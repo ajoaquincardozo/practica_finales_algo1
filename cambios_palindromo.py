@@ -44,7 +44,7 @@ def es_palindromo_con_cambios( cadena ):
 	"""Realiza cambios y en base a eso te dice si hay palindromos o no"""
 	cambios = sys.stdin.readline().rstrip("\n").replace(",","")
 	while cambios:
-		cambios = obtener	_cambios(cambios)
+		cambios = obtener_cambios(cambios)
 		cadena = realizar_cambios(cadena,cambios)
 		print(cadena," Es palindromo: ",es_palindromo( cadena ) )
 		print("Desea continuar: [S/N]",end = " ")
